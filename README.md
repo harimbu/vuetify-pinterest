@@ -1,24 +1,8 @@
 # vuetify-pinterest
 
-## Project setup
-```
-yarn install
-```
+## Masonry UI
 
-### Compiles and hot-reloads for development
 ```
-yarn serve
+"vue-masonry": "^0.12.0",
+"vue-stack-grid": "^1.2.2",
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
