@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer permanent app>
-      <Nav :items="items" />
+      <Nav :items="items" :items2="items2" />
       <Banner />
     </v-navigation-drawer>
 
@@ -40,6 +40,10 @@ export default {
         { title: 'Home', icon: 'mdi-home', to: '/' },
         { title: 'Recent', icon: 'mdi-clock-time-three', to: '/recent' },
         { title: 'Following', icon: 'mdi-account-multiple', to: '/follwing' }
+      ],
+      items2: [
+        { title: 'Message', icon: 'mdi-message-reply-text', count: '' },
+        { title: 'Notifications', icon: 'mdi-bell', count: '2' }
       ]
     }
   }
