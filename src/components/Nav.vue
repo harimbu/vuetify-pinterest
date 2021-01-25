@@ -5,14 +5,12 @@
         <v-img src="https://cdn0.iconfinder.com/data/icons/Pinterest/256/Pinterest_Favicon.png"></v-img>
       </v-list-item-avatar>
       <v-list-item-content>
-        <v-list-item-title class="title">
-          Pinterest
-        </v-list-item-title>
+        <v-list-item-title class="title"><span class="logo">Pinterest</span></v-list-item-title>
       </v-list-item-content>
     </v-list-item>
 
     <v-list dense nav>
-      <v-list-item v-for="item in items" :key="item.title" link>
+      <v-list-item v-for="item in items" :key="item.title" :to="item.to" color="pink darken-4">
         <v-list-item-icon>
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-item-icon>
@@ -45,7 +43,7 @@
           <v-list-item-title>Notifications</v-list-item-title>
         </v-list-item-content>
 
-        <v-list-item-avatar size="26" color="orange darken-2" class="white--text caption">2</v-list-item-avatar>
+        <v-list-item-avatar size="26" color="pink accent-2" class="white--text caption">2</v-list-item-avatar>
       </v-list-item>
     </v-list>
   </div>
@@ -55,3 +53,11 @@ export default {
   props: ['items']
 }
 </script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+}
+</style>

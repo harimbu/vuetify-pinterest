@@ -37,9 +37,9 @@ export default {
   data() {
     return {
       items: [
-        { title: 'Home', icon: 'mdi-home' },
-        { title: 'Recent', icon: 'mdi-clock-time-three' },
-        { title: 'Following', icon: 'mdi-account-multiple' }
+        { title: 'Home', icon: 'mdi-home', to: '/' },
+        { title: 'Recent', icon: 'mdi-clock-time-three', to: '/recent' },
+        { title: 'Following', icon: 'mdi-account-multiple', to: '/follwing' }
       ]
     }
   }
