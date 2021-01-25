@@ -16,4 +16,4 @@
 
 ## 깃헙 호스팅
 
-[https://harimbu.github.io/vuetify-pinterest/](https://harimbu.github.io/vuetify-pinterest/){:target="\_blank" rel="noopener"}
+[https://harimbu.github.io/vuetify-pinterest/](https://harimbu.github.io/vuetify-pinterest/)
