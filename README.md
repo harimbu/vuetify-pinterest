@@ -9,6 +9,4 @@
 
 ## Design Source
 
-```
-[https://openpeeps.com/]https://openpeeps.com/){:target="_blank"}
-```
+[https://openpeeps.com/]https://openpeeps.com/){:target="\_blank"}
