@@ -9,4 +9,4 @@
 
 ## UI source
 
-인물 [https://openpeeps.com/](https://openpeeps.com/) / 인물/장면 [https://openpeeps.com/](https://openpeeps.com/)
+인물 [https://openpeeps.com/](https://openpeeps.com/) / 인물/장면 [https://humaaans.com/](https://humaaans.com/)
