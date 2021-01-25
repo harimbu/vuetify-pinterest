@@ -7,6 +7,6 @@
 "vue-stack-grid": "^1.2.2",
 ```
 
-## Design Source
+## UI source
 
-[https://openpeeps.com/]https://openpeeps.com/){:target="\_blank"}
+인물 [https://openpeeps.com/](https://openpeeps.com/) / 인물/장면 [https://openpeeps.com/](https://openpeeps.com/)
