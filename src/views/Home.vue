@@ -11,7 +11,6 @@
 <script>
 import { Stack, StackItem } from 'vue-stack-grid'
 import ImageCard from '@/components/ImageCard'
-import axios from 'axios'
 
 export default {
   name: 'Home',
@@ -31,21 +30,31 @@ export default {
     this.getImage(this.keyword)
   },
   methods: {
-    getImage(topic) {
-      this.images = []
-      axios
-        .get(`https://api.unsplash.com/search/photos?query=${topic}&per_page=20`, {
-          headers: {
-            Authorization: `Client-ID e6MD8Gpf5agAWPP4BsapuMe7Htj7sOSXMluIMTbuAXo`
-          }
+    getImage(query) {
+      this.$unsplash.search
+        .getPhotos({ query: query, orientation: 'portrait', page: 1, perPage: 20 })
+        .then(result => {
+          this.images = result.response.results
         })
-        .then(response => {
-          this.images = response.data.results
-        })
-        .catch(() => {
-          this.images = []
+        .catch(e => {
+          console.log(e.message)
         })
     }
+    // getImage(topic) {
+    //   this.images = []
+    //   axios
+    //     .get(`https://api.unsplash.com/search/photos?query=${topic}&per_page=20`, {
+    //       headers: {
+    //         Authorization: `Client-ID app-key`
+    //       }
+    //     })
+    //     .then(response => {
+    //       this.images = response.data.results
+    //     })
+    //     .catch(() => {
+    //       this.images = []
+    //     })
+    // }
   }
 }
 </script>
