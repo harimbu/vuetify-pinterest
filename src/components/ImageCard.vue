@@ -1,13 +1,13 @@
 <template>
   <v-card flat class="ma-1">
-    <v-img :src="item.photo" style="border-radius:20px" />
+    <img :src="item.urls.small" style="border-radius:20px" />
     <v-layout align-center pa-3>
       <v-avatar size="40">
-        <v-img :src="item.avatar" />
+        <v-img :src="item.user.profile_image.medium" />
       </v-avatar>
       <v-flex class="ml-3">
-        <div class="subtitle-2">{{ item.name }}</div>
-        <div class="caption grey--text lighten-1">{{ item.followers }} followers</div>
+        <div class="subtitle-2" v-text="`${item.user.first_name} ${item.user.last_name}`"></div>
+        <div class="caption grey--text lighten-1">{{ item.likes }} likes</div>
       </v-flex>
     </v-layout>
   </v-card>

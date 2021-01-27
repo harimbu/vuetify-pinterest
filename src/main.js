@@ -3,11 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
-import { VueMasonryPlugin } from 'vue-masonry'
 
 Vue.config.productionTip = false
 
-Vue.use(VueMasonryPlugin)
+Vue.prototype.$eventBus = new Vue() // Vue에 전역객체로 등록
 
 new Vue({
   router,
